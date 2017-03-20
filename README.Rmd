@@ -1,24 +1,39 @@
+---
+title: "長庚大學 大數據分析方法 作業二"
+output: github_document
+---
+
 ##數值變數運算
+```{r}
 num1 = 3651
 num2 = 5815
 paste("num1 加 num2 =",num1+num2) 
 paste("num1 減 num2 =",num1-num2)
 paste("num1 乘 num2 =",num1*num2)
 paste("num1 除 num2 =",round(num1/num2,digits = 2) )
+```
 
 ##檢查總覽資料
+```{r}
 str(iris)
+```
 
 ##輸出系統現在日期
+```{r}
 dateBook<-Sys.Date()
 dateBook
+```
 
 ##字串比大小
+```{r}
 char1 = "A"
 char2 = "a"
 char3 = "b"
 char1 > char2
 char3 > char1
+```
 
 ##運作環境資訊擷取
-installed.packages()
+```{r}
+sessionInfo()
+```
